@@ -1,0 +1,28 @@
+.index {
+  padding: 0px 20px;
+  width: 100%;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  /*flex:1*/
+}
+
+.favorites,
+.channels,
+.friends {
+  padding: 10px 0px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.favorites .favorites__title,
+.channels .channels__title,
+.friends .friends__title {
+  padding: 10px 0px;
+  font-size: 12px;
+  color: gray;
+}
+
+.index .profile:hover {
+  background-color: #ececed;
+  cursor: pointer;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats | Dogkao Original</title>
+    <script
+      src="https://kit.fontawesome.com/4ffbc60912.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <aside class="aside">
+      <ul class="aside__list">
+        <li class="aside__list-item">
+          <a href="index.html" class="href"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="aside__list-item">
+          <a href="chats.html"><i class="fas fa-comment"></i></a>
+        </li>
+        <li class="aside__list-item">
+          <a href="more.html"><i class="fas fa-ellipsis-h"></i></a>
+        </li>
+      </ul>
+      <ul class="aside__list">
+        <li class="aside__list-item"><i class="far fa-laugh-beam"></i></li>
+        <li class="aside__list-item"><i class="far fa-calendar-check"></i></li>
+        <li class="aside__list-item"><i class="far fa-bell"></i></li>
+        <li class="aside__list-item"><i class="fas fa-bars"></i></li>
+      </ul>
+    </aside>
+    <section class="main-flex">
+      <header class="basic-header">
+        <section class="basic-btn">
+          <div class="basic-btn__column">
+            <i class="far fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-times"></i>
+          </div>
+        </section>
+        <section class="title">
+          <div class="title__name">
+            <span class="title__name-name">
+              채팅
+            </span>
+            <i class="fas fa-sort-down"></i>
+          </div>
+          <div class="title__icons">
+            <i class="far fa-comments"></i>
+            <i class="fas fa-comment-medical"></i>
+          </div>
+        </section>
+        <div class="search__name">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            class="search-box"
+            placeholder="채팅방 이름, 참여자 검색"
+          />
+        </div>
+      </header>
+      <main class="chats">
+        <section class="chats__list">
+          <ul class="chats__list__room">
+            <li class="chats__list profile">
+              <div class="profile__column">
+                <img src="images/bmo.jpg" class="profile__image" alt="" />
+                <div class="profile__column__info">
+                  <span class="profile__name">
+                    Bmo
+                  </span>
+                  <span class="profile__msg">
+                    Can you change my battery?
+                  </span>
+                </div>
+              </div>
+              <div class="profile__column">
+                <div class="profile__column timestamp">
+                  오후 6:01
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>

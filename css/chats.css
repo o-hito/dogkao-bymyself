@@ -1,0 +1,22 @@
+.chats {
+  padding: 0px 20px;
+  width: 100%;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  /*flex:1*/
+}
+
+.chats__list .profile__column {
+  display: flex;
+  align-items: flex-start;
+}
+
+.title__icons i {
+  padding-left: 15px;
+}
+
+.chats .chats__list:hover {
+  background-color: #ececed;
+  cursor: pointer;
+}

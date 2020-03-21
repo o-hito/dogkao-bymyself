@@ -1,0 +1,28 @@
+.aside {
+  background-color: #ececed;
+  height: 100%;
+  flex: 0 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aside__list {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside__list .aside__list-item {
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.aside__list:first-child {
+  margin-top: 45px;
+}
+
+.aside__list:last-child {
+  margin-bottom: 20px;
+}
