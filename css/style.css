@@ -5,6 +5,8 @@
 @import "basic-header.css";
 @import "chats.css";
 @import "more.css";
+@import "mobile.css";
+@import "room.css";
 
 * {
   box-sizing: border-box;
@@ -30,4 +32,11 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  .bigScreen {
+    display: flex;
+  }
 }

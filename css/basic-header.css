@@ -44,3 +44,13 @@
   background-color: #f6f6f7;
   color: #757575;
 }
+
+.search__name i {
+  animation: magnify_spin 2s linear infinite;
+}
+
+@keyframes magnify_spin {
+  to {
+    transform: rotate(1turn);
+  }
+}

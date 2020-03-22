@@ -26,3 +26,22 @@
 .aside__list:last-child {
   margin-bottom: 20px;
 }
+
+.aside__list-item:nth-child(2) {
+  position: relative;
+}
+
+.aside__list-item__badge {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: cetner;
+  padding: 3px;
+  font-size: 12px;
+  color: white;
+  border: 1px solid none;
+  border-radius: 50%;
+  background-color: #dc5d46;
+  top: -5px;
+  left: 12px;
+}

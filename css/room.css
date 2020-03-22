@@ -1,0 +1,153 @@
+.room__list:not(:nth-child(2)),
+.write-text,
+.room__day {
+  opacity: 0;
+}
+
+.aside-room {
+  animation: disappearAside 2s ease-in forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes disappearAside {
+  from {
+    position: absolute;
+    width: 70px;
+    left: 0;
+  }
+  to {
+    position: absolute;
+    width: 70px;
+    left: -99px;
+  }
+}
+
+.title-room,
+.search__name-room {
+  animation: disappearHeader 0.5s ease-in forwards;
+}
+
+@keyframes disappearHeader {
+  to {
+    opacity: 0;
+  }
+}
+
+.room__section {
+  animation: moveSection 2s ease-in forwards;
+}
+
+@keyframes moveSection {
+  from {
+    position: absolute;
+    left: 90px;
+    top: 110px;
+    right: 60px;
+  }
+  to {
+    position: absolute;
+    top: 110px;
+    left: 60px;
+    right: 60px;
+  }
+}
+
+.room__list {
+  flex-direction: column;
+}
+
+.room__list,
+.room__day {
+  animation: showup 2s ease-in-out forwards;
+}
+
+.write-text {
+  animation: showup 2s ease-in-out forwards, float 3s linear infinite forwards;
+}
+
+@keyframes showup {
+  to {
+    opacity: 1;
+  }
+}
+
+.room__list__ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.room__list__ul .profile__column:nth-child(2) {
+  flex-direction: column;
+}
+
+.sent {
+  align-self: flex-end;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.incoming-time {
+  font-size: 10px;
+  padding-top: 12px;
+  align-self: flex-start;
+}
+
+.sent-time {
+  font-size: 10px;
+  padding-top: 12px;
+  align-self: flex-end;
+}
+
+.room__day {
+  align-self: center;
+}
+
+.write-text {
+  margin-top: 200px;
+  display: flex;
+  border: 1px solid green;
+  border-radius: 15px;
+  justify-content: space-around;
+}
+
+.write-text__input {
+  margin-left: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.write-text i {
+  padding: 5px;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    box-shadow: 0 30px 60px -60px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+.room__list img {
+  animation: spin 3s linear infinite;
+}
